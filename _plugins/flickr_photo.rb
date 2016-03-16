@@ -11,7 +11,7 @@
 #
 #   http://www.flickr.com/services/api/flickr.photos.getSizes.html
 
-#   Medium (~500px width) is the default.
+#   Large is the default.
 #
 # Requires a Flickr API key in _config.yml (where "flickr:" is defined on the root level):
 #
@@ -42,7 +42,7 @@ module Jekyll
     def initialize(tag_name, markup, tokens)
       super
       params = Shellwords.shellwords markup
-      @photo = { :id => params[0], :size => params[1] || "Medium", :sizes => {}, :title => "", :caption => "", :url => "", :exif => {} }
+      @photo = { :id => params[0], :size => params[1] || "Large", :sizes => {}, :title => "", :caption => "", :url => "", :exif => {} }
     end
 
     def render(context)
