@@ -47,10 +47,11 @@ module Jekyll
 
     def render(context)
         @api_key = context.registers[:site].config["flickr"]["api_key"]
+        @username = context.registers[:site].config["flickr"]["username"]
         @photo.merge!(@@cached[photo_key] || get_photo)
 
         selected_size = @photo[:sizes][@photo[:size]]
-        "<a class=\"thumbnail\" href=\"#{@photo[:url]}\"><img src=\"#{selected_size[:source]}\" title=\"#{@photo[:title]}\"></a>"
+        "<a class=\"thumbnail\" href=\"http://flickr.com/photos/#{@username}/#{@photo[:id]}\"><img src=\"#{selected_size[:source]}\" title=\"#{@photo[:title]}\"></a>"
     end
 
     def get_photo
