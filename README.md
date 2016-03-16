@@ -10,7 +10,7 @@ A Jekyll plug-in for embedding Flickr photos in your Liquid templates.
 
   ... where 1234567890 is the Flickr photo ID, and "Large Square" is the size label [as defined here by Flickr](http://www.flickr.com/services/api/flickr.photos.getSizes.html).
 
-  Medium (~500px width) is the default.
+  Large is the default.
 
 #### Requires an API Key
 
@@ -18,6 +18,7 @@ A Jekyll plug-in for embedding Flickr photos in your Liquid templates.
 
     flickr:
       api_key: kjh3g4kj1h2gkjh1gvbnvd7o1khmqjh2g3
+      username: raytray
 
   [Get your API key here](http://www.flickr.com/services/apps/create/).
   

@@ -17,6 +17,7 @@
 #
 #   flickr:
 #     api_key: 21u3gj12kg34jh12gk3j4hg1k2j3h4g
+#     username: raytray
 #
 # You can obtain a Flickr API key here: http://www.flickr.com/services/apps/create/
 #
